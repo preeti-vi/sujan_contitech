@@ -9,4 +9,4 @@ langchain-chroma
 langchain_openai
 
 streamlit
-
+pysqlite3-binary
