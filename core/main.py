@@ -1,16 +1,7 @@
-from utilities import web_scrape
 from utilities import generate_response
-from langchain_chroma import Chroma
 from dotenv import load_dotenv
-
-
-__import__('pysqlite3')
-import sys
-sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
-
-import sqlite3
-
 from utilities import db_store
+
 
 load_dotenv()
 

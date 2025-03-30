@@ -1,4 +1,5 @@
 import streamlit as st
+from core import main
 from streamlit import logger
 
 __import__('pysqlite3')
@@ -6,8 +7,6 @@ import sys
 sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
 import sqlite3
-
-from core import main
 
 app_logger = logger.get_logger("SMI_APP")
 app_logger.info(f"SQLite version : {sqlite3.sqlite_version}")
